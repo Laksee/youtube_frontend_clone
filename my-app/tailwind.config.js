@@ -1,0 +1,19 @@
+import colors from 'tailwindcss/colors'
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        slate: {
+          ...colors.slate,
+          100: '#0f0f0f',
+        }
+      },
+    },
+  },
+  plugins: [],
+}
